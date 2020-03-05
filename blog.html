@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客详情</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./status/css/me.css">
+</head>
+<body>
+
+<!--导航-->
+    <nav class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">Blog</h2>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <div class="ui icon inverted transparent input">
+                        <input type="text" placeholder="Search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--移动端时隐藏导航-->
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+<!--中间内容-->
+    <div class="m-container-small m-padded-tb-big">
+      <div class="ui container">
+          <div class="ui top attached segment">
+              <div class="ui horizontal link list">
+                  <div class="item">
+                      <img src="https://picsum.photos/100/100/?blur" alt="" class="ui avatar image">
+                      <div class="content"><a href="#" class="header">张建发</a></div>
+                  </div>
+                  <div class="item">
+                      <i class="calendar icon"></i>2020-02-02
+                  </div>
+                  <div class="item">
+                      <i class="eye icon"></i>2020
+                  </div>
+          </div>
+          <div class="ui attached segment">
+              <!--图片区域-->
+              <img src="https://picsum.photos/800/400/?blur" alt="" class="ui rounded fluid image">
+          </div>
+          <div class="ui attached padded segment">
+              <!--内容-->
+              <div class="ui right aligned basic segment">
+
+                  <div class="ui orange label basic">转载</div>
+              </div>
+
+              <h2 class="ui center aligned header">Webstorm的一些常用快捷键</h2>
+              <br>
+
+              <div id="content" class="m-padded-lr-responsive m-padded-tb-large">
+                  <p>下面是Webstorm的一些常用快捷键：<br />
+                      1. ctrl + shift + n: 打开工程中的文件，目的是打开当前工程下任意目录的文件。<br />
+                      2. ctrl + j: 输出模板<br />
+                      3. ctrl + b: 跳到变量申明处<br />
+                      4. ctrl + alt + T: 围绕包裹代码(包括zencoding的Wrap with Abbreviation)<br />
+                      5. ctrl + []: 匹配 {}[]<br />
+                      6. ctrl + F12: 可以显示当前文件的结构<br />
+                      7. ctrl + x: 剪切(删除)行，不选中，直接剪切整个行，如果选中部分内容则剪切选中的内容<br />
+                      8. alt + left/right:标签切换<br />
+                      9. ctrl + r: 替换<br />
+                      10. ctrl + shift + up: 行移动<br />
+                      11. shift + alt + up: 块移动(if(){},while(){}语句块的移动)<br />
+                      12. ctrl + d: 行复制<br />
+                      13. ctrl + shift + ]/[: 选中块代码<br />
+                      14. ctrl + / : 单行注释<br />
+                      15. ctrl + shift + / : 块注释<br />
+                      16. ctrl + shift + i : 显示当前CSS选择器或者JS函数的详细信息<br />
+                      17. ctrl + '-/+': 可以折叠项目中的任何代码块，它不是选中折叠，而是自动识别折叠。<br />
+                      18. ctrl + '.': 折叠选中的代码的代码。<br />
+                      ctrl+/ 单行注释<br />
+                      ctrl+shift+/块注释<br />
+                      ctrl+shift+ +/-展开/折叠<br />
+                      ctrl+alt+L 格式化代码<br />
+                      ctrl+shift+ up/down 上下移动句子<br />
+                      Alt+回车 导入包,自动修正<br />
+                      Ctrl+N 查找类<br />
+                      Ctrl+Shift+N 查找文件<br />
+                      Ctrl+Alt+L 格式化代码<br />
+                      Ctrl+Alt+O 优化导入的类和包<br />
+                      Alt+Insert 生成代码(如get,set方法,构造函数等)<br />
+                      Ctrl+E或者Alt+Shift+C 最近更改的代码<br />
+                      Ctrl+R 替换文本<br />
+                      Ctrl+F 查找文本<br />
+                      Ctrl+Shift+Space 自动补全代码<br />
+                      Ctrl+空格 代码提示<br />
+                      Ctrl+Alt+Space 类名或接口名提示<br />
+                      Ctrl+P 方法参数提示<br />
+                      Ctrl+Shift+Alt+N 查找类中的方法或变量<br />
+                      Alt+Shift+C 对比最近修改的代码<br />
+                      Shift+F6 重构-重命名<br />
+                      Ctrl+Shift+先上键<br />
+                      Ctrl+X 删除行<br />
+                      Ctrl+D 复制行<br />
+                      Ctrl+/ 或 Ctrl+Shift+/ 注释（// 或者/*...*/ ）<br />
+                      Ctrl+J 自动代码<br />
+                      Ctrl+E 最近打开的文件<br />
+                      Ctrl+H 显示类结构图<br />
+                      Ctrl+Q 显示注释文档<br />
+                      Alt+F1 查找代码所在位置<br />
+                      Alt+1 快速打开或隐藏工程面板<br />
+                      Ctrl+Alt+ left/right 返回至上次浏览的位置<br />
+                      Alt+ left/right 切换代码视图<br />
+                      Alt+ Up/Down 在方法间快速移动定位<br />
+                      Ctrl+Shift+Up/Down 代码向上/下移动。<br />
+                      F2 或Shift+F2 高亮错误或警告快速定位<br />
+                      代码标签输入完成后，按Tab，生成代码。<br />
+                      选中文本，按Ctrl+Shift+F7 ，高亮显示所有该文本，按Esc高亮消失。<br />
+                      Ctrl+W 选中代码，连续按会有其他效果<br />
+                      选中文本，按Alt+F3 ，逐个往下查找相同文本，并高亮显示。<br />
+                      Ctrl+Up/Down 光标跳转到第一行或最后一行下<br />
+                      Ctrl+B 快速打开光标处的类或方法</p>
+              </div>
+              <!--标签-->
+              <div class="m-padded-lr-responsive">
+                  <div class="ui basic teal left pointing label">方法论</div>
+              </div>
+              <!--赞赏-->
+              <div class="ui center aligned basic segment">
+
+                  <button id="payButton" class="ui orange basic circular button">赞赏</button>
+              </div>
+              <div class="ui payQR flowing popup transition hidden">
+                  <div class="ui orange basic label">
+                      <div class="ui images" style="font-size: inherit ! important">
+                          <div class="image">
+                              <img src="./status/images/WeChat.png" alt="" class="ui rounded bordered image" style="width: 120px">
+                              <div>支付宝</div>
+                          </div>
+                          <div class="image">
+                              <img src="./status/images/WeChat.png" alt="" class="ui rounded bordered image" style="width: 120px">
+                              <div>微信</div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="ui attached positive message">
+              <!--博客信息-->
+              <div class="ui middle aligned grid">
+                  <div class="eleven wide column">
+                    <ui class="list">
+                        <li>作者：张建发 （联系方式）</li>
+                        <li>发表时间：2020-02-02 13:31</li>
+                        <li>版权声明：自由转载-非商业-非衍生-保持署名 （创意共享3.0许可证）</li>
+                        <li>公众号转载：请在文末添加作者公众号二维码</li>
+                    </ui>
+                  </div>
+                  <div class="five wide column">
+                      <img src="./status/images/WeChat.png" alt="" class="ui right floated rounded bordered image" style="width: 110px;">
+                  </div>
+              </div>
+          </div>
+          <div class="ui bottom attached segment">
+              <!--留言区列表-->
+              <div class="ui teal segment">
+
+              </div>
+              <div class="ui form">
+                  <div class="ui comments">
+                      <h3 class="ui dividing header">留言</h3>
+                      <div class="comment">
+                          <a class="avatar">
+                              <img src="./status/images/IMG_20180505_081544.jpg">
+                          </a>
+                          <div class="content">
+                              <a class="author">Matt</a>
+                              <div class="metadata">
+                                  <span class="date">今天下午 5:42</span>
+                              </div>
+                              <div class="text">太赞了！ </div>
+                              <div class="actions">
+                                  <a class="reply">回复</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="comment">
+                          <a class="avatar">
+                              <img src="./status/images/IMG_20180505_081544.jpg">
+                          </a>
+                          <div class="content">
+                              <a class="author">Elliot Fu</a>
+                              <div class="metadata">
+                                  <span class="date">昨天上午12:30</span>
+                              </div>
+                              <div class="text">
+                                  <p>這對我的研究是非常有用.謝謝!</p>
+                              </div>
+                              <div class="actions">
+                                  <a class="reply">回复</a>
+                              </div>
+                          </div>
+                          <div class="comments">
+                              <div class="comment">
+                                  <a class="avatar">
+                                      <img src="./status/images/IMG_20180505_081544.jpg">
+                                  </a>
+                                  <div class="content">
+                                      <a class="author">Jenny Hess</a>
+                                      <div class="metadata">
+                                          <span class="date">刚刚</span>
+                                      </div>
+                                      <div class="text">艾略特你永远是多么正确 :) </div>
+                                      <div class="actions">
+                                          <a class="reply">回复</a>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="comment">
+                          <a class="avatar">
+                              <img src="./status/images/IMG_20180505_081544.jpg">
+                          </a>
+                          <div class="content">
+                              <a class="author">Joe Henderson</a>
+                              <div class="metadata">
+                                  <span class="date">5 天以前</span>
+                              </div>
+                              <div class="text">老兄，这太棒了。非常感谢。 </div>
+                              <div class="actions">
+                                  <a class="reply">回复</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="ui form">
+                  <div class="field">
+                      <textarea name="content" placeholder="请输入评论信息..." id="" cols="30" rows="10"></textarea>
+                  </div>
+                  <div class="fields">
+                      <div class="field m-mobile-wide m-margin-bottom-small">
+                          <div class="ui left icon input">
+                              <i class="user icon"></i>
+                              <input type="text" name="nickname" placeholder="姓名">
+                          </div>
+                      </div>
+                      <div class="field m-mobile-wide m-margin-bottom-small">
+                          <div class="ui left icon input">
+                              <i class="mail icon"></i>
+                              <input type="text" name="email" placeholder="邮箱">
+                          </div>
+                      </div>
+                      <div class="m-margin-bottom-small field m-mobile-wide">
+                          <button class="ui teal button field m-mobile-wide"><i class="edit icon"></i>发表</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+<br>
+<!--底部-->
+    <footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+
+                    <div class="item">
+                        <img src="./status/images/WeChat.png" class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用户故事 (User Story)</a>
+                    <a href="#" class="item">关于刻意练习的清单</a>
+                    <a href="#" class="item">失败要趁早</a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Email:0318wade@gmail.com</a>
+                    <a href="#" class="item">QQ:1834659342</a>
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced">博主介绍</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的一个博客，记录分享一些个人在工作学习过程的所得，希望可以给人带来帮助...</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright 2020 by Wade</p>
+    </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggeClass('m-mobile-hide');
+    });
+
+    $('#payButton').popup({
+       popup : $('.payQR.popup') ,
+        on : 'click',
+        position : 'bottom center'
+    });
+</script>
+    </div>
+</body>
+</html>
